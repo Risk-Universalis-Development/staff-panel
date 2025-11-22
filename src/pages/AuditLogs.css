@@ -1,0 +1,231 @@
+.audit-logs-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.audit-logs-buttons button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.05rem;
+    outline: none !important;
+    border: none !important;
+    background-color: #1a1a1a;
+    transition: 0.1s;
+}
+
+.audit-logs-buttons button:hover {
+    background-color: #222222;
+}
+
+.audit-logs-buttons .primary {
+    background-color: #fdfcc871;
+}
+
+.audit-logs-buttons .primary:hover {
+    background-color: #fdfcc84f;
+}
+
+.audit-logs-buttons button svg {
+    width: 20px;
+}
+
+.audit-logs-search {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.audit-logs-search input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 50px;
+    font-size: 1.05rem;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none !important;
+    transition: 0.1s;
+}
+
+.audit-logs-search input:focus {
+    border: 1px solid #fdfcc886;
+}
+
+.audit-logs-seperator {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.audit-logs-page {
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.audit-logs-page .audit-logs {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    min-width: 400px;
+    width: calc(33.33% - 13.4px);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    align-items: flex-start;
+    height: auto;
+    box-sizing: border-box; 
+}
+
+@media screen and (max-width: 1310px) { 
+    .audit-logs-page .audit-logs {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 890px) { 
+    .audit-logs-page .audit-logs {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.audit-logs-page .unappealable-ban {
+    border: 1px solid #fa57578c;
+}
+
+.audit-logs-page .audit-logs .buttons {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.audit-logs-page .audit-logs .buttons button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    outline: none !important;
+    border: none !important;
+    background-color: #fdfcc86b;
+    transition: 0.1s;
+    width: 100%;
+}
+
+.audit-logs-page .audit-logs .buttons img {
+    width: calc(100% - 20px);
+}
+
+@keyframes blink-image-load {
+    0% {
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+}
+
+.audit-logs-page .audit-logs .buttons .profile-image-load {
+    width: calc(100% - 20px);
+    height: 80px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.24);
+    animation: blink-image-load 1s ease-in-out 0s infinite;
+}
+
+.audit-logs-page .audit-logs .buttons button:hover {
+    background-color: #fdfcc856;
+}
+
+.audit-logs-page .audit-logs .data a {
+    color: #fdfcc8;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.audit-logs-page .audit-logs .data .user-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.audit-logs-page .audit-logs .data .user-holder .username {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1rem;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    white-space: none;
+}
+
+.audit-logs-page .audit-logs .data .user-holder .id {
+    color: #ffffffaf;
+}
+
+.audit-logs-page .audit-logs .data a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.audit-logs-page .audit-logs .data {
+    width: calc(100% - 120px);
+    text-align: left;
+}
+
+.audit-logs-page .audit-logs .data .audit-logs-data {
+    color: #ffffffbd;
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    text-wrap: wrap;
+}
+
+.audit-logs-page .audit-logs .data .audit-logs-data svg {
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+.audit-logs-page .audit-logs .data .audit-logs-data b {
+    color: #ffffff;
+}
+
+.audit-logs-search-filter {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    font-size: 1.1rem;
+    align-items: center;
+    height: 80px;
+}
